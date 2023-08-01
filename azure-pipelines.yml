@@ -55,7 +55,7 @@ stages:
     condition: and(succeeded(), not(startsWith(variables['Build.SourceBranch'], 'refs/pull/')))
     displayName: Deploy
     pool:
-      vmImage: $(vmImageName)
+      name: $(vmImageName)
     environment: 'Nshalini01Azuredeploy-2217.deploy'
     strategy:
       runOnce:
