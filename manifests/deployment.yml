@@ -1,19 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: bathiniarundotnetarun 
+  name: meghanapurimitla 
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bathiniarundotnetarun
+      app: meghanapurimitla
   template:
     metadata:
       labels:
-        app: bathiniarundotnetarun 
+        app: meghanapurimitla 
     spec:
       containers:
-        - name: bathiniarundotnetarun 
-          image: dotnet1.azurecr.io/bathiniarundotnetarun
+        - name: meghanapurimitla 
+          image: acraug.azurecr.io/meghanapurimitlaazuredeploy:latest
           ports:
           - containerPort: 8080
